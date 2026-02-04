@@ -3,107 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Transformação Digital | Equipe 5</title>
+    <title>Transformação Digital | Equipe 5</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Suavizar a rolagem da página */
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans scroll-smooth">
+<body class="bg-gray-50 text-slate-800 font-sans antialiased">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-blue-700">INDUSTRY<span class="text-slate-400">4.0</span></span>
-            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase">
-                <a href="#inicio" class="hover:text-blue-600 transition">Início</a>
-                <a href="#abordagem" class="hover:text-blue-600 transition">Abordagem</a>
-                <a href="#capacitacao" class="hover:text-blue-600 transition">Capacitação</a>
-                <a href="#contato" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contato</a>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-industry text-blue-700 text-2xl"></i>
+                <span class="text-xl font-bold tracking-tight text-slate-900">INDÚSTRIA<span class="text-blue-600">4.0</span></span>
             </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-slate-600">
+                <a href="#home" class="hover:text-blue-700 transition">Início</a>
+                <a href="#problema" class="hover:text-blue-700 transition">O Desafio</a>
+                <a href="#solucao" class="hover:text-blue-700 transition">Solução</a>
+                <a href="#tecnologia" class="hover:text-blue-700 transition">Tecnologias</a>
+                <a href="#beneficios" class="hover:text-blue-700 transition">Resultados</a>
+            </div>
+            <a href="#contato" class="hidden md:block bg-blue-700 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-800 transition shadow-lg shadow-blue-700/20">
+                Fale Conosco
+            </a>
         </div>
     </nav>
 
-    <section id="inicio" class="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-900 via-blue-800 to-slate-900 text-white">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 italic">Transformação Digital: O Futuro é Humano</h1>
-            <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-10">
-                A tecnologia só funciona quando as pessoas estão engajadas. Nossa solução integra a Indústria 4.0 ao dia a dia da equipe, garantindo produtividade e bem-estar.
+    <section id="home" class="relative pt-32 pb-20 px-6 bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+
+        <div class="relative max-w-5xl mx-auto text-center text-white z-10">
+            <span class="bg-blue-600/20 border border-blue-500/30 text-blue-200 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-widest mb-6 inline-block">
+                Situação de Aprendizagem - Equipe 5
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Transformação Digital e <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Engajamento Humano</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Superamos a resistência cultural integrando pessoas, processos e tecnologia. 
+                Uma abordagem estratégica para indústrias que buscam inovação sustentável.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-blue-700/50 px-4 py-2 rounded-full border border-blue-400 text-sm">✓ Modernização</span>
-                <span class="bg-blue-700/50 px-4 py-2 rounded-full border border-blue-400 text-sm">✓ Engajamento</span>
-                <span class="bg-blue-700/50 px-4 py-2 rounded-full border border-blue-400 text-sm">✓ Eficiência</span>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#solucao" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition transform hover:-translate-y-1 shadow-lg shadow-blue-600/30">
+                    Conheça Nossa Solução
+                </a>
+                <a href="#problema" class="bg-transparent border border-slate-500 text-slate-300 px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition">
+                    Entenda o Problema
+                </a>
             </div>
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
-
-        <section id="abordagem" class="text-center">
-            <h2 class="text-3xl font-bold mb-4">Nossa Abordagem Integrada</h2>
-            <p class="text-slate-500 mb-12">Integração entre Tecnologia, Pessoas e Processos</p>
-            
-            
-
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Pessoas</h3>
-                    <p class="text-slate-600 text-sm">Engajamento ativo, reuniões de sensibilização e reconhecimento para vencer resistências.</p>
-                </div>
-                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <i class="fas fa-microchip text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Tecnologia</h3>
-                    <p class="text-slate-600 text-sm">Implementação estratégica de ferramentas da Indústria 4.0 como IoT e Big Data.</p>
-                </div>
-                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <i class="fas fa-sync text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Processos</h3>
-                    <p class="text-slate-600 text-sm">Análise, organização e adaptação dos fluxos para o ambiente digital sustentável.</p>
-                </div>
+    <section id="problema" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Reunião tensa" class="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-500">
             </div>
-        </section>
-
-        <section id="capacitacao" class="grid md:grid-cols-2 gap-16 items-center bg-white p-10 rounded-3xl shadow-sm">
             <div>
-                <h2 class="text-3xl font-bold mb-6">Capacitação Contínua</h2>
-                <p class="text-slate-600 mb-8 leading-relaxed">
-                    Aumentamos a segurança e a produtividade através de um plano de execução focado no domínio das novas tecnologias e suporte emocional à mudança.
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 border-l-4 border-blue-600 pl-4">Por que a tecnologia falha?</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Muitas indústrias investem milhões em digitalização, mas esquecem o fator principal: <strong>quem opera a máquina</strong>. Atualmente, enfrentamos um cenário crítico:
                 </p>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-4"></i>
-                        <p class="text-sm"><strong>Participação nas decisões:</strong> Feedback constante da equipe operacional.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-circle text-red-500 mt-1 mr-3 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800">Investimento sem Adoção</strong>
+                            <span class="text-sm text-slate-500">Ferramentas modernas são subutilizadas por falta de conhecimento.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-user-slash text-red-500 mt-1 mr-3 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800">Resistência Cultural</strong>
+                            <span class="text-sm text-slate-500">O medo da substituição gera barreira entre colaboradores e inovação.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-chart-line text-red-500 mt-1 mr-3 text-lg transform rotate-180"></i>
+                        <div>
+                            <strong class="block text-slate-800">Baixa Produtividade</strong>
+                            <span class="text-sm text-slate-500">A falta de engajamento compromete os resultados esperados.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucao" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Estratégia Integrada</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">
+                Nossa abordagem não foca apenas no software, mas na sustentabilidade do ecossistema industrial baseada em três pilares fundamentais.
+            </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-blue-500 group">
+                <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
+                    <i class="fas fa-users text-2xl text-blue-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Pessoas</h3>
+                <ul class="text-sm text-slate-600 space-y-2">
+                    <li>✓ Capacitação contínua e prática.</li>
+                    <li>✓ Participação ativa nas decisões.</li>
+                    <li>✓ Valorização do aprendizado.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-cyan-500 group">
+                <div class="w-16 h-16 bg-cyan-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 transition">
+                    <i class="fas fa-cogs text-2xl text-cyan-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Processos</h3>
+                <ul class="text-sm text-slate-600 space-y-2">
+                    <li>✓ Digitalização de fluxos produtivos.</li>
+                    <li>✓ Decisões baseadas em dados reais.</li>
+                    <li>✓ Integração total entre setores.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-indigo-500 group">
+                <div class="w-16 h-16 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                    <i class="fas fa-microchip text-2xl text-indigo-600 group-hover:text-white transition"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Tecnologia</h3>
+                <ul class="text-sm text-slate-600 space-y-2">
+                    <li>✓ Implementação gradual e assistida.</li>
+                    <li>✓ Ferramentas da Indústria 4.0.</li>
+                    <li>✓ Suporte constante na adaptação.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Tecnologias Habilitadoras</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="bg-blue-600/20 p-4 rounded-full shrink-0">
+                        <i class="fas fa-brain text-3xl text-blue-400"></i>
                     </div>
-                    <div class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-4"></i>
-                        <p class="text-sm"><strong>Apoio interno:</strong> Mentoria para acelerar a curva de aprendizado.</p>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-100">Inteligência Artificial (IA)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Plataformas adaptativas que personalizam o treinamento e apoiam gestores com análises preditivas.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Treinamentos Personalizados</li>
+                            <li>• Identificação de falhas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="bg-cyan-600/20 p-4 rounded-full shrink-0">
+                        <i class="fas fa-wifi text-3xl text-cyan-400"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-cyan-100">Internet das Coisas (IoT)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Sensores conectados que monitoram a produção e a segurança em tempo real, reduzindo riscos.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Monitoramento Real-Time</li>
+                            <li>• Manutenção Preditiva</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="space-y-4">
-                <div class="bg-blue-50 p-6 rounded-2xl">
-                    <h4 class="font-bold text-blue-900 mb-2 italic text-sm">Impacto Real</h4>
-                    <p class="text-slate-700 text-sm italic">"A tecnologia deixou de ser uma barreira e se tornou uma ferramenta de protagonismo para nós."</p>
-                    <span class="block mt-2 text-xs font-bold text-blue-600">— Feedback de Colaborador</span>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16">
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="bg-green-100 text-green-600 w-8 h-8 rounded flex items-center justify-center mr-3 text-sm"><i class="fas fa-check"></i></span>
+                        Benefícios para o Colaborador
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex p-4 bg-slate-50 rounded-lg">
+                            <i class="fas fa-shield-alt text-blue-500 mt-1 mr-4"></i>
+                            <p class="text-sm text-slate-700"><strong>Mais Segurança:</strong> Redução drástica de acidentes e erros operacionais.</p>
+                        </div>
+                        <div class="flex p-4 bg-slate-50 rounded-lg">
+                            <i class="fas fa-graduation-cap text-blue-500 mt-1 mr-4"></i>
+                            <p class="text-sm text-slate-700"><strong>Valorização:</strong> Desenvolvimento de novas habilidades digitais.</p>
+                        </div>
+                        <div class="flex p-4 bg-slate-50 rounded-lg">
+                            <i class="fas fa-hand-holding-heart text-blue-500 mt-1 mr-4"></i>
+                            <p class="text-sm text-slate-700"><strong>Autonomia:</strong> Confiança para operar sistemas complexos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded flex items-center justify-center mr-3 text-sm"><i class="fas fa-trophy"></i></span>
+                        Resultados Organizacionais
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-600 text-white p-6 rounded-xl text-center">
+                            <span class="block text-3xl font-bold mb-1">+40%</span>
+                            <span class="text-xs uppercase opacity-80">Produtividade</span>
+                        </div>
+                        <div class="bg-slate-800 text-white p-6 rounded-xl text-center">
+                            <span class="block text-3xl font-bold mb-1">-25%</span>
+                            <span class="text-xs uppercase opacity-80">Retrabalho</span>
+                        </div>
+                        <div class="col-span-2 bg-slate-100 p-6 rounded-xl border border-slate-200 text-center">
+                            <p class="font-bold text-slate-700 text-lg">Cultura de Inovação Fortalecida</p>
+                            <p class="text-xs text-slate-500 mt-2">Adoção rápida e eficiente das novas tecnologias.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">A tecnologia sem engajamento é apenas uma ferramenta parada.</h2>
+            <p class="mb-8 max-w-xl mx-auto">
+                Vamos transformar sua indústria através das pessoas? Entre em contato com a Equipe 5 e conheça o futuro da manufatura.
+            </p>
+            
+            <a href="#" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-500 transition mb-12">
+                Solicitar Apresentação
+            </a>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Equipe 5. Transformação Digital e Engajamento.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-        </section>
-
-        <section id="contato" class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Dúvidas sobre o Projeto?</h2>
-            <div class="bg-blue-600 p-1 rounded-2xl shadow-2xl">
-                <form class="bg-white p-8 rounded-xl grid md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Nome" class="p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-blue-500">
-                    <input type="email" placeholder="E-mail" class="p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-blue-500">
-                    <textarea placeholder="Como a Equipe 5 pode ajudar?" class="md:col-span-2 p-3 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 h-32"></textarea>
-                    <button type="button" class="md:col-span-2 bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Enviar Contato</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="py-10 border-t border-slate-200 text-center text-slate-400 text-sm">
-        <p>Projeto <strong>transformacao-digital-TETI</strong> | Desenvolvido pela Equipe 5</p>
+        </div>
     </footer>
 
 </body>
